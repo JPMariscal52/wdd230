@@ -6,18 +6,27 @@
     <title>Jose Pablo Mariscal Ramos - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development - Jose Pablo Mariscal Ramos - course assignment portal">
     <meta name="author" content="Jose Pablo Mariscal Ramos">
+    <meta property="og:title" content="Jose Pablo Mariscal Ramos - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.yosoypuebla.com/wp-content/uploads/2017/04/puebla-zocalo-catedral-1024x603.jpg">
+    <meta property="og:url" content="https://jpmariscal52.github.io/wdd230/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
         <img src="images/profile.jpeg" alt="Jose Pablo Mariscal Ramos">
         <span>Jose Pablo Mariscal Ramos</span>
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="hamburgerBtn" class="mobile-only">&#9776;</button>
     </header>
-    <nav>
+    <nav id="navbar">
+        <button id="closeBtn" class="mobile-only">&times;</button>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="chamber.html">Chamber</a></li>
@@ -43,5 +52,6 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
