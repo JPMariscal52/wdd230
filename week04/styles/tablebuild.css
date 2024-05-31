@@ -1,0 +1,40 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  caption {
+    caption-side: bottom;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  thead {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  .check {
+    color: green;
+  }
+  
+  .cross {
+    color: red;
+  }
+  

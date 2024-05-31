@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Pablo Mariscal Ramos - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Jose Pablo Mariscal Ramos - course assignment portal">
+    <meta name="author" content="Jose Pablo Mariscal Ramos">
+    <meta property="og:title" content="Jose Pablo Mariscal Ramos - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.yosoypuebla.com/wp-content/uploads/2017/04/puebla-zocalo-catedral-1024x603.jpg">
+    <meta property="og:url" content="https://jpmariscal52.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpeg" alt="Jose Pablo Mariscal Ramos">
+        <span>Jose Pablo Mariscal Ramos</span>
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="hamburgerBtn" class="mobile-only">&#9776;</button>
+    </header>
+    <nav id="navbar">
+        <button id="closeBtn" class="mobile-only">&times;</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="https://jpmariscal52.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and alpha-numeric" required>
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+            </div>
+            <div>
+                <label for="page_rating">Page Rating:</label>
+                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" oninput="document.getElementById('rating_value').textContent = this.value">
+                <span id="rating_value">5</span>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p id="copyright">
+            &copy; <span id="currentYear"></span> Jose Pablo Mariscal Ramos - Mexico
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
+    <script> src="scripts/record.js"</script>
+
+</body>
+</html>

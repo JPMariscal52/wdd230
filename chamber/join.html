@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Puebla Chamber of Commerce</title>
+    <meta name="description" content="Join the Puebla Chamber of Commerce by filling out the form below.">
+    <meta name="author" content="Jose Pablo Mariscal Ramos">
+    <meta property="og:title" content="Join Us - Puebla Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.yosoypuebla.com/wp-content/uploads/2017/04/puebla-zocalo-catedral-1024x603.jpg">
+    <meta property="og:url" content="https://jpmariscal52.github.io/wdd230/join.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <span>Puebla Chamber of Commerce</span>
+        <button id="hamburgerBtn" class="mobile-only">&#9776;</button>
+    </header>
+    <nav id="navbar">
+        <button id="closeBtn" class="mobile-only">&times;</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Join the Puebla Chamber of Commerce</legend>
+                <label for="firstName">First Name:
+                    <input type="text" id="firstName" name="firstName" required>
+                </label>
+                <label for="lastName">Last Name:
+                    <input type="text" id="lastName" name="lastName" required>
+                </label>
+                <label for="position">Title/Position:
+                    <input type="text" id="position" name="position" pattern="[A-Za-z\s-]{7,}" title="Only alpha characters, hyphens, and spaces are allowed. Minimum 7 characters.">
+                </label>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </label>
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+                <label for="organization">Organization:
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+                <label for="membership">Membership Level:
+                    <select id="membership" name="membership" required>
+                        <option value="NP">Non-Profit Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <div class="sidebar">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li><strong>Non-Profit Membership:</strong> No fee. Basic benefits.</li>
+                <li><strong>Bronze Membership:</strong> Basic events, networking opportunities.</li>
+                <li><strong>Silver Membership:</strong> Advanced events, training sessions, and advertising opportunities.</li>
+                <li><strong>Gold Membership:</strong> Premium events, training, advertising, and exclusive discounts.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">
+            &copy; <span id="currentYear"></span> Jose Pablo Mariscal Ramos - WDD230
+        </p>
+        <p>+52 (222) 1547655</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

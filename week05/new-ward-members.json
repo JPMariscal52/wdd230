@@ -1,0 +1,24 @@
+{
+    "familyName": "Mariscal",
+    "dateMovedIn": "2021-09-01",
+    "numberOfPeople": 3,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Pablo Mariscal",
+        "gender": "Male",
+        "birthdate": "1991-02-28"
+      },
+      {
+        "name": "Tania Rodriguez",
+        "gender": "Female",
+        "birthdate": "1996-06-15"
+      },
+      {
+        "name": "Pedro Mariscal",
+        "gender": "Male",
+        "birthdate": "2023-12-28"
+      }
+    ]
+  }
+  
