@@ -160,4 +160,34 @@ footer {
     }
 }
 
+#weather-info {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#weather-info h2 {
+    margin-top: 0;
+    color: #0c1a91;
+}
+
+#current-temp {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0c1a91;
+}
+
+#weather-icon {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+#caption-desc {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
 

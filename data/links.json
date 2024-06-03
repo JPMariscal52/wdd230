@@ -1,0 +1,66 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week01/holygrail.html",
+            "title": "Holygrail"
+          },
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week01/media-query.html",
+            "title": "Media Query"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week02/bom.html",
+            "title": "BOM"
+          },
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week02/design.html",
+            "title": "Design"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week03/lazyload.html",
+            "title": "Lazy Load"
+          },
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week03/responsive-images.html",
+            "title": "Responsive Images"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week04/tablebuild.html",
+            "title": "Table"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week05/prophets.html",
+            "title": "Prophets List"
+          },
+          {
+            "url": "https://github.com/JPMariscal52/wdd230/week05/weather.html",
+            "title": "Weather Information"
+          }
+        ]
+      }
+    ]
+  }
+  
