@@ -190,4 +190,27 @@ footer {
     margin-top: 10px;
 }
 
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul ul {
+    margin-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+.card ul li a {
+    color: #0c1a91;
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+
 
