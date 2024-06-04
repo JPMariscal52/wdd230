@@ -225,8 +225,6 @@ footer {
     padding: 0;
 }
 
-/* Additional CSS for form and sidebar layout */
-
 form {
     background-color: #f4f4f4;
     padding: 20px;
@@ -287,3 +285,36 @@ form input[type="submit"]:hover {
         gap: 20px;
     }
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100px; 
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    margin-bottom: 10px;
+}
+
+.list-item div {
+    flex: 1;
+}
+

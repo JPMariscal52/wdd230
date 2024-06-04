@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Puebla Chamber of Commerce</title>
-    <meta name="description" content="Thank you for joining the Puebla Chamber of Commerce.">
+    <title>Jose Pablo Mariscal Ramos - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Jose Pablo Mariscal Ramos - course assignment portal">
     <meta name="author" content="Jose Pablo Mariscal Ramos">
-    <meta property="og:title" content="Thank You - Puebla Chamber of Commerce">
+    <meta property="og:title" content="Jose Pablo Mariscal Ramos - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.yosoypuebla.com/wp-content/uploads/2017/04/puebla-zocalo-catedral-1024x603.jpg">
-    <meta property="og:url" content="https://jpmariscal52.github.io/wdd230/thankyou.html">
+    <meta property="og:url" content="https://jpmariscal52.github.io/wdd230/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -33,19 +33,23 @@
         </ul>
     </nav>
     <main>
-        <section class="hero">
-            <h1>Thank You!</h1>
-        </section>
-        <p>Thank you for filling out the form. We will get back to you shortly.</p>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <hr>
+        <article id="directory" class="grid">
+        </article>
     </main>
     <footer>
         <p id="copyright">
-            &copy; <span id="currentYear"></span> Jose Pablo Mariscal Ramos - WDD230
+            &copy; <span id="currentYear"></span> Jose Pablo Mariscal Ramos - WDD30
         </p>
         <p>+52 (222) 1547655</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/index.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>
