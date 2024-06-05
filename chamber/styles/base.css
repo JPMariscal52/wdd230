@@ -318,3 +318,29 @@ form input[type="submit"]:hover {
     flex: 1;
 }
 
+.banner {
+    background-color: #ffeb3b;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    display: none; 
+    z-index: 1000;
+}
+
+.banner p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.banner button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+

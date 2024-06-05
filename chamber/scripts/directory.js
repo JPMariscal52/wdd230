@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const gridBtn = document.getElementById("grid");
     const listBtn = document.getElementById("list");
 
-    // Función para obtener los datos del archivo JSON
     async function getData() {
         try {
             const response = await fetch("data/members.json");
@@ -14,9 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Función para crear la vista de cuadrícula
     function createGridView(data) {
-        directory.innerHTML = ""; // Limpiar contenido anterior
+        directory.innerHTML = ""; 
         data.forEach(company => {
             const card = document.createElement("section");
             card.classList.add("card");
@@ -35,9 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Función para crear la vista de lista
     function createListView(data) {
-        directory.innerHTML = ""; // Limpiar contenido anterior
+        directory.innerHTML = ""; 
         data.forEach(company => {
             const listItem = document.createElement("section");
             listItem.classList.add("list-item");
@@ -55,14 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Obtener datos y crear vista inicial
     getData().then(data => {
         createGridView(data);
     }).catch(error => {
         console.error("Error:", error);
     });
 
-    // Event listeners para los botones de grilla y lista
     gridBtn.addEventListener("click", function () {
         getData().then(data => {
             createGridView(data);
